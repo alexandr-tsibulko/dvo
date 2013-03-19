@@ -1,0 +1,360 @@
+/*
+Theme Name: DVO
+Description: DVO WordPress theme
+Author: Alexandr
+Author URI: http://wordpress.org/
+Version: 1.0
+*/
+
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff url(images/body_bg.jpg) left top repeat-x; color:#000; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,fieldset,td,tr,form,label,select,checkbox,input,textarea {
+    padding:0;
+    margin:0;
+    outline:none;
+    list-style:none;
+
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:hover                        { text-decoration:none; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.wrapper {
+    overflow: hidden;
+    width: 1055px;
+    margin: 0 auto;
+    background: #fff;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header-holder {
+    overflow: hidden;
+}
+.header-holder img {
+    display: block;
+}
+.header {
+    overflow: hidden;
+    margin: 27px 41px 25px 36px;
+}
+.header h1 {
+    float: left;
+}
+.header h1 a {
+    display: block;
+    width: 190px;
+    height: 58px;
+}
+.header span {
+    float: right;
+    background: url(images/telefon_bg.png) left top no-repeat;
+    padding-left: 23px;
+    font: 24px arial;
+    color: #1F93EB;
+    margin-top: 10px;
+    line-height: 31px;
+}
+.header ul.nav {
+    float: left;
+    margin-left: 90px;
+    margin-top: 19px;
+}
+.header ul.nav li {
+    float: left;
+    padding: 0 13px;
+    border-left: 1px solid #ccc;
+}
+.header ul.nav li a {
+    font: 18px arial;
+    text-decoration: none;
+}
+.header ul.nav li a:hover {
+    color: #1B3492;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.content img {
+    display: block;
+    float: left;
+}
+.content img.slogan {
+    margin-right: 12px;
+}
+.content .right-block {
+    overflow: hidden;
+}
+.content .right-block img.video{
+    margin-bottom: 12px;
+}
+.content .bottom-block {
+    overflow: hidden;
+    margin:0 36px;
+}
+ul.service {
+    overflow: hidden;
+    margin-top: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #D4D4D4;
+    margin-bottom: 24px;
+}
+ul.service li {
+    float: left;
+    min-height: 66px;
+    margin-right: 33px;
+    padding-left: 90px;
+}
+ul.service li.last {
+    margin-right: 0;
+    border-bottom: none;
+}
+ul.service li.mail {
+    background: url(images/mail_bg.png) left top no-repeat;
+}
+ul.service li.phone {
+    background: url(images/black_telefon_bg.png) left top no-repeat;
+}
+ul.service li.office {
+    background: url(images/office_bg.png) left top no-repeat;
+}
+ul.service li.conf {
+    background: url(images/room_bg.png) left top no-repeat;
+}
+ul.service li h3 a{
+    font: 16px arial;
+    font-weight: bold;
+    text-decoration: none;
+}
+ul.service li p {
+    text-align: left;
+    color: #7B7B7B;
+    font: 10px arial;
+    max-width: 128px;
+}
+.content .bottom-block h2.www {
+    float: left;
+    margin-right: 57px;
+    font: 20px arial;
+    font-weight: normal;
+}
+.content .bottom-block .about {
+    overflow: hidden;
+    font: 14px/19px arial;
+    color: #595959;
+    margin-bottom: 25px;
+}
+.content .bottom-block a.create {
+    display: block;
+    width: 327px;
+    height: 180px;
+    float: left;
+    background: url(images/create_link_bg.png) left top no-repeat;
+}
+.content .bottom-block a.limited {
+    display: block;
+    float: left;
+    width: 328px;
+    height: 180px;
+    background: url(images/limited_time_link_bg.png) left top no-repeat;
+}
+.content .bottom-block a.sign-up {
+    display: block;
+    float: left;
+    width: 327px;
+    height: 180px;
+    background: url(images/sign_up_link_bg.png) left top no-repeat;
+}
+
+
+.about-content {
+    overflow: hidden;
+}
+.about-content h1 {
+    color: #3D4F95;
+    font: 32px arial;
+    margin-top: 27px;
+    margin-bottom: 18px;
+}
+.about-content p {
+    color: #595959;
+    font: 14px arial;
+    margin-bottom: 17px;
+    line-height: 19px;
+}
+.wrap-about {
+    overflow: hidden;
+    margin-left: 37px;
+    border-bottom: 1px solid #D4D4D4;
+    padding-bottom: 10px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.sidebar {
+    float: left;
+}
+.sidebar ul.contacts {
+    overflow: hidden;
+    margin:  82px 35px 0 0;
+}
+.sidebar ul.contacts li {
+    min-height: 29px;
+    border: 1px solid #D1D1D1;
+    padding: 5px 35px 8px 12px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: url(images/sidebar_contacts_bg.png) right top no-repeat;
+    font: 24px arial;
+    color: #3D4F95;
+    width: 240px;
+}
+.sidebar ul.contacts li.tel {
+    background-position: right 17px ;
+}
+.sidebar ul.contacts li.skype {
+    background-position: right -52px;
+}
+.sidebar ul.contacts li.mail {
+    background-position: right -126px;
+}
+.sidebar ul.contacts li.inter {
+
+    background-position: right -171px;
+}
+.sidebar ul.contacts li strong {
+    color: #7A7B7F;
+    font: 14px arial;
+}
+.sidebar ul.contacts li a {
+    color: #3D4F95;
+    font: 14px arial;
+    text-decoration: none;
+}
+ul.sidebar-serv {
+    border-bottom: none;
+    width: 288px;
+}
+ul.sidebar-serv li {
+    margin-right: 0;
+    float: none;
+    border-bottom: 1px solid #D4D4D4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.footer {
+    overflow: hidden;
+    margin:0 36px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.footer span {
+    float : left;
+    font: 16px arial;
+    color: #585858;
+    font-weight: bold;
+    margin-top: 13px;
+}
+.footer ul.social{
+    float: left;
+    padding-right: 102px;
+   /* border-right: 1px solid #ccc;*/
+}
+.footer ul.social li {
+    float: left;
+    padding: 7px 0 7px 11px;
+}
+.footer ul.social li a {
+    display: block;
+    width: 29px;
+    height: 29px;
+    background: url(images/social_link.png) left top no-repeat;
+}
+.footer ul.social li.t a {
+    background-position: 0 0;
+}
+.footer ul.social li.f a {
+    background-position: -41px 0;
+}
+.footer ul.social li.rss a {
+    background-position: -84px 0;
+}
+.footer p {
+    overflow: hidden;
+    font: 14px arial;
+    color: #949494;
+    padding: 11px 0 0 27px;
+}
+.footer .footer-menus h3 {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.footer .footer-menus {
+    float: left;
+    margin-right: 26px;
+    margin-top: 10px;
+}
+.footer .footer-menus ul {
+    float: left;
+    overflow: hidden;
+}
+.footer .footer-menus ul li a {
+    font: 12px arial;
+    color: #359BCB;
+    text-decoration: none;
+}
+.footer .footer-menus ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer img {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.footer span.copy {
+    color: #838383;
+    font-size: 12px;
+    float: right;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
